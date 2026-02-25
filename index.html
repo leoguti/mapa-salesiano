@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa del Salesiano - Nuestros Lugares Favoritos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; }
+        #header {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+        }
+        #header h1 { font-size: 1.4em; margin-bottom: 5px; }
+        #header p { font-size: 0.9em; opacity: 0.8; }
+        #map { height: calc(100vh - 80px); width: 100%; }
+        .popup h3 { color: #1a237e; margin-bottom: 5px; }
+        .popup p { color: #333; font-size: 0.9em; margin-bottom: 5px; }
+        .popup .autor {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1565c0;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Mapa del Salesiano - Nuestros Lugares Favoritos</h1>
+        <p>Escuela OSM + Vibe Coding | Club Deportivo Salesiano 2026</p>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        var map = L.map('map').setView([5.8268, -73.0333], 14);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> | Escuela OSM Salesiano 2026'
+        }).addTo(map);
+
+        // ============================================================
+        // EJEMPLO - Copia este bloque y cambia los datos
+        // ============================================================
+        // L.marker([LATITUD, LONGITUD]).addTo(map)
+        //     .bindPopup(
+        //         '<div class="popup">' +
+        //         '<h3>NOMBRE DEL LUGAR</h3>' +
+        //         '<p>DESCRIPCIÓN: Por qué me gusta este lugar</p>' +
+        //         '<span class="autor">Agregado por: TU NOMBRE</span>' +
+        //         '</div>'
+        //     );
+        // ============================================================
+
+        // === LEONARDO (ejemplo) ===
+        L.marker([5.8288, -73.0348]).addTo(map)
+            .bindPopup(
+                '<div class="popup">' +
+                '<h3>Colegio Salesiano</h3>' +
+                '<p>Nuestra base de operaciones. Aquí nació la Escuela de OpenStreetMap.</p>' +
+                '<span class="autor">Agregado por: Leonardo</span>' +
+                '</div>'
+            );
+
+        // === NADIA ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === BRAYAN ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === ANA MARIA ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === CRISTIAN ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === CAMILO PEÑA ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === YOSEF ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+        // === EDWARD ===
+        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
+        // la descripción y tu nombre. Haz commit cuando termines.
+
+    </script>
+</body>
+</html>
