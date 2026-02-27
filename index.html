@@ -88,8 +88,14 @@
             );
 
         // === ANA MARIA ===
-        // Copia el bloque de ejemplo, cambia las coordenadas, el nombre del lugar,
-        // la descripción y tu nombre. Haz commit cuando termines.
+        L.marker([5.831169, -73.034272]).addTo(map)
+            .bindPopup(
+                '<div class="popup">' +
+                '<h3>Empanadas y Café</h3>' +
+                '<p>DESCRIPCION: Un lugar para degustar empanadas con su respectiva bebida</p>' +
+                '<span class="autor">Agregado por: TU NOMBRE</span>' +
+                '</div>'
+            );
 
         // === CRISTIAN ===
         L.marker([ 5.832441, -73.032220]).addTo(map)
