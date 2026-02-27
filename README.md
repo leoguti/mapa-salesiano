@@ -40,10 +40,17 @@ Proyecto colaborativo de la Escuela de OpenStreetMap + Vibe Coding del Club Depo
    - `DESCRIPCION` por tu descripción personal
    - `TU NOMBRE` por tu nombre
 
-### Paso 3: Guardar (commit)
+### Paso 3: Guardar tu cambio (hacer un "commit")
 
-1. Abajo en **"Commit changes"** escribe un mensaje, por ejemplo: `Agregar Plaza de los Libertadores - Nadia`
-2. Haz clic en el botón verde **"Commit changes"**
+Un **commit** es como guardar una versión de tu trabajo. GitHub recuerda cada cambio que haces. Así si algo sale mal, siempre puedes volver atrás.
+
+1. Cuando termines de editar, baja hasta el final de la página
+2. Vas a ver una sección que dice **"Commit changes"**
+3. En el primer campo escribe un mensaje corto que describa lo que hiciste. Ejemplo: `Agregar Plaza de los Libertadores - Nadia`
+4. Deja marcada la opción **"Commit directly to the main branch"**
+5. Haz clic en el botón verde **"Commit changes"**
+
+Listo. Tu cambio quedó guardado. Eso es un commit.
 
 ### Paso 4: Ver el resultado
 
